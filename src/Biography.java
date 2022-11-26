@@ -33,5 +33,11 @@ public class Biography {
 
         //YOUR CODE HERE
 
+       Author author =  Author.createAuthor();
+        System.out.println(author);
+        if(!author.books.isEmpty()) {
+            System.out.println("Author's books are as listed below:");
+            author.books.forEach(System.out::println);
+        }
     }
 }
